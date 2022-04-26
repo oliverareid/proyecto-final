@@ -72,12 +72,21 @@ p{
     flex-direction: row;
 }
 
+.caja-img{
+    justify-content: center;
+}
 
 .img-inicio{
-    max-width: 600px;
-    max-height: 600px;
+    width: 600px;
+    height: 400px;
     padding-bottom: 50px;
     padding-left: 40px;
+    transition: height, width, 2s;
+}
+
+.img-inicio:hover{
+    height: 420px;
+    width: 610px;
 }
 
 h1{
@@ -89,7 +98,7 @@ h2{
 }
 
 .novedades{
-    background-color:antiquewhite;
+    background-image:linear-gradient(antiquewhite, rgb(200, 151, 212), antiquewhite);
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 20px;
 }
@@ -107,6 +116,12 @@ h2{
     max-height: 15%;
     padding: 1px;
     border: 2px double darkmagenta;
+    transition: max-width, max-height, 1.5s;
+}
+
+.novedades-img img:hover{
+    max-height: 17%;
+    max-width: 17%;
 }
 
 .logos{
@@ -186,11 +201,14 @@ h2{
 
 .img-uno{
     background-color: rgb(200, 151, 212);
+    width: 100%;
+    height: 100%;
     grid-area: img-uno;
     max-width: 100%;
     max-height: 100%;
     display: flex;
     align-items: center;
+    transition: height, width, 2s;
 }
 
 .img-dos{
@@ -242,7 +260,7 @@ h2{
 
 .texto-cuatro{
     grid-area: texto-cuatro;
-    background-color: rgb(200, 151, 212);
+    background-image: linear-gradient(to bottom, rgb(200, 151, 212), antiquewhite, rgb(200, 151, 212));
     display: flex;
     align-items: center;
     text-align: justify;
@@ -267,6 +285,11 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.img-uno:hover{
+    width: 150%;
+    height: 150%;
 }
 
 @media screen and (max-width: 768px) {
