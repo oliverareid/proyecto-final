@@ -121,7 +121,172 @@ h2{
     max-width: 15%;
     max-height: 8%;
 }
+
+/*Dirección y Gestión*/
+.direccion-y-gestion{
+    display: grid;
+    grid-template-columns: repeat(6, 16.3%);
+    grid-template-rows: repeat(10, 120px);
+    grid-template-areas: 
+    "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
+    "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
+    "seccion-elsa seccion-elsa seccion-elsa texto-dos img-tres texto-tres"
+    "seccion-elsa seccion-elsa seccion-elsa texto-dos img-tres texto-tres"
+    "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
+    "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
+    "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
+    "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
+    "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
+    "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
+    ;
+    gap: 5px;
+}
+
 .foto-elsa{
-    max-width: 50%;
-    max-height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-luciana{
+    max-width: 120%;
+    max-height: 120%;
+    display: flex;
+    justify-content: center;
+}
+
+.epigrafe-foto{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.fotos-grid{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.titulo-direccion{
+    grid-area: titulo-direccion;
+}
+.seccion-elsa{
+    grid-area: seccion-elsa;
+    margin-right: 5px;
+}
+
+.seccion-luciana{
+    grid-area: seccion-luciana;
+}
+
+
+.historia article p{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-uno{
+    background-color: rgb(200, 151, 212);
+    grid-area: img-uno;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-dos{
+    background-color: rgb(200, 151, 212);
+    grid-area: img-dos;
+    display: flex;
+    align-items: center;
+}
+
+.img-tres{
+    background-color: rgb(200, 151, 212);
+    grid-area: img-tres;
+    display: flex;
+    align-items: center;
+}
+
+.texto-uno{
+    grid-area: texto-uno;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: x-large;
+    padding: 7px;
+    font-style: italic;
+}
+
+.texto-dos{
+    grid-area: texto-dos;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: x-large;
+    padding: 7px;
+    font-style: italic;
+}
+
+.texto-tres{
+    grid-area: texto-tres;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: x-large;
+    padding: 7px;
+    font-style: italic;
+}
+
+.texto-cuatro{
+    grid-area: texto-cuatro;
+    background-color: rgb(200, 151, 212);
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: x-large;
+    padding: 7px;
+    font-style: italic;
+}
+
+.espacio-blanco{
+    grid-area: espacio-blanco;
+    display: flex;
+    display: none;
+}
+
+.seccion-elsa img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video-elsa{
+    grid-area: video-elsa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .direccion-y-gestion{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(11, 120px);
+        grid-template-areas: 
+        "seccion-elsa seccion-elsa img-uno texto-uno"
+        "seccion-elsa seccion-elsa img-uno texto-uno"
+        "seccion-elsa seccion-elsa texto-dos img-dos"
+        "seccion-elsa seccion-elsa texto-dos img-dos"
+        "seccion-elsa seccion-elsa img-tres texto-tres"
+        "seccion-elsa seccion-elsa img-tres texto-tres"
+        "seccion-elsa seccion-elsa texto-cuatro texto-cuatro"
+        "seccion-elsa seccion-elsa texto-cuatro texto-cuatro"
+        "seccion-luciana seccion-luciana video-elsa video-elsa"
+        "seccion-luciana seccion-luciana video-elsa video-elsa"
+        "seccion-luciana seccion-luciana video-elsa video-elsa"
+        ;
+        gap: 5px;
+    }
 }
