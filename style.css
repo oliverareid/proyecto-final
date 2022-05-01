@@ -37,7 +37,7 @@
 }
 
 .submenu li a{
-    display: block;;
+    display: block;
     padding: 15px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -95,6 +95,10 @@ h1{
 h2{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+}
+
+.novedades1{
+    background-color: rgb(150, 83, 212);
 }
 
 .novedades{
@@ -208,7 +212,6 @@ h2{
     max-height: 100%;
     display: flex;
     align-items: center;
-    transition: height, width, 2s;
 }
 
 .img-dos{
@@ -287,10 +290,6 @@ h2{
     justify-content: center;
 }
 
-.img-uno:hover{
-    width: 150%;
-    height: 150%;
-}
 
 @media screen and (max-width: 768px) {
     .direccion-y-gestion{
