@@ -1,23 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.navegacion{
+.navegacion {
     background-color: darkmagenta;
     width: 100%;
 }
 
-.navegacion ul{
+.navegacion ul {
     list-style: none;
 }
 
-.menu > li{
+.menu>li {
     position: relative;
     display: inline-block;
 }
 
-.menu > li > a{
+.menu>li>a {
     display: block;
     padding: 15px 20px;
     color: white;
@@ -25,18 +25,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background-color: darkorchid;
 }
 
-.submenu{
+.submenu {
     position: absolute;
     background: darkviolet;
     width: 150%;
     display: none;
 }
 
-.submenu li a{
+.submenu li a {
     display: block;
     padding: 15px;
     color: white;
@@ -44,39 +44,40 @@
     text-decoration: none;
 }
 
-.menu li:hover .submenu{
+.menu li:hover .submenu {
     display: block;
 }
 
-.historia-padre{
+.historia-padre {
     font-family: 'Open Sans', sans-serif;
     margin: 10px 10px 10px 10px;
 }
-h1{
+
+h1 {
     margin-bottom: 5px;
 }
 
-p{
+p {
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
 }
 
-.historia{
+.historia {
     display: inline-block;
     width: 50%;
     margin-bottom: 20px;
 }
 
-.seccion{
+.seccion {
     display: flex;
     flex-direction: row;
 }
 
-.caja-img{
+.caja-img {
     justify-content: center;
 }
 
-.img-inicio{
+.img-inicio {
     width: 600px;
     height: 400px;
     padding-bottom: 50px;
@@ -84,30 +85,31 @@ p{
     transition: height, width, 2s;
 }
 
-.img-inicio:hover{
+.img-inicio:hover {
     height: 420px;
     width: 610px;
 }
 
-h1{
+h1 {
     font-family: 'Open Sans', sans-serif;
 }
-h2{
+
+h2 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
-.novedades1{
+.novedades1 {
     background-color: rgb(150, 83, 212);
 }
 
-.novedades{
-    background-image:linear-gradient(antiquewhite, rgb(200, 151, 212), antiquewhite);
+.novedades {
+    background-image: linear-gradient(antiquewhite, rgb(200, 151, 212), antiquewhite);
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 20px;
 }
 
-.novedades-img{
+.novedades-img {
     padding-top: 15px;
     display: flex;
     flex-direction: row;
@@ -115,7 +117,7 @@ h2{
     justify-content: space-evenly;
 }
 
-.novedades-img img{
+.novedades-img img {
     max-width: 15%;
     max-height: 15%;
     padding: 1px;
@@ -123,12 +125,12 @@ h2{
     transition: max-width, max-height, 1.5s;
 }
 
-.novedades-img img:hover{
+.novedades-img img:hover {
     max-height: 17%;
     max-width: 17%;
 }
 
-.logos{
+.logos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -136,74 +138,75 @@ h2{
     padding-bottom: 40px;
 }
 
-.logos img{
+.logos img {
     max-width: 15%;
     max-height: 8%;
 }
 
 /*Dirección y Gestión*/
-.direccion-y-gestion{
+.direccion-y-gestion {
     display: grid;
     grid-template-columns: repeat(6, 16.3%);
     grid-template-rows: repeat(10, 120px);
-    grid-template-areas: 
-    "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
-    "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
-    "seccion-elsa seccion-elsa seccion-elsa texto-dos img-tres texto-tres"
-    "seccion-elsa seccion-elsa seccion-elsa texto-dos img-tres texto-tres"
-    "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
-    "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
-    "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
-    "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
-    "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
-    "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
+    grid-template-areas:
+        "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
+        "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
+        "seccion-elsa seccion-elsa seccion-elsa texto-dos img-tres texto-tres"
+        "seccion-elsa seccion-elsa seccion-elsa texto-dos img-tres texto-tres"
+        "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
+        "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
+        "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
+        "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
+        "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
+        "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
     ;
     gap: 5px;
 }
 
-.foto-elsa{
+.foto-elsa {
     display: flex;
     justify-content: center;
 }
 
-.foto-luciana{
+.foto-luciana {
     max-width: 120%;
     max-height: 120%;
     display: flex;
     justify-content: center;
 }
 
-.epigrafe-foto{
+.epigrafe-foto {
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
-.fotos-grid{
+.fotos-grid {
     max-width: 100%;
     max-height: 100%;
 }
 
-.titulo-direccion{
+.titulo-direccion {
     grid-area: titulo-direccion;
 }
-.seccion-elsa{
+
+.seccion-elsa {
     grid-area: seccion-elsa;
     margin-right: 5px;
 }
 
-.seccion-luciana{
+.seccion-luciana {
     grid-area: seccion-luciana;
 }
 
 
-.historia article p{
+.historia article p {
     max-width: 100%;
     max-height: 100%;
 }
 
-.img-uno{
+.img-uno {
     background-color: rgb(200, 151, 212);
     width: 100%;
     height: 100%;
@@ -214,21 +217,21 @@ h2{
     align-items: center;
 }
 
-.img-dos{
+.img-dos {
     background-color: rgb(200, 151, 212);
     grid-area: img-dos;
     display: flex;
     align-items: center;
 }
 
-.img-tres{
+.img-tres {
     background-color: rgb(200, 151, 212);
     grid-area: img-tres;
     display: flex;
     align-items: center;
 }
 
-.texto-uno{
+.texto-uno {
     grid-area: texto-uno;
     background-color: antiquewhite;
     display: flex;
@@ -239,7 +242,7 @@ h2{
     font-style: italic;
 }
 
-.texto-dos{
+.texto-dos {
     grid-area: texto-dos;
     background-color: antiquewhite;
     display: flex;
@@ -250,7 +253,7 @@ h2{
     font-style: italic;
 }
 
-.texto-tres{
+.texto-tres {
     grid-area: texto-tres;
     background-color: antiquewhite;
     display: flex;
@@ -261,7 +264,7 @@ h2{
     font-style: italic;
 }
 
-.texto-cuatro{
+.texto-cuatro {
     grid-area: texto-cuatro;
     background-image: linear-gradient(to bottom, rgb(200, 151, 212), antiquewhite, rgb(200, 151, 212));
     display: flex;
@@ -272,18 +275,18 @@ h2{
     font-style: italic;
 }
 
-.espacio-blanco{
+.espacio-blanco {
     grid-area: espacio-blanco;
     display: flex;
     display: none;
 }
 
-.seccion-elsa img{
+.seccion-elsa img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.video-elsa{
+.video-elsa {
     grid-area: video-elsa;
     display: flex;
     align-items: center;
@@ -292,23 +295,102 @@ h2{
 
 
 @media screen and (max-width: 768px) {
-    .direccion-y-gestion{
+    .direccion-y-gestion {
         display: grid;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(11, 120px);
-        grid-template-areas: 
-        "seccion-elsa seccion-elsa img-uno texto-uno"
-        "seccion-elsa seccion-elsa img-uno texto-uno"
-        "seccion-elsa seccion-elsa texto-dos img-dos"
-        "seccion-elsa seccion-elsa texto-dos img-dos"
-        "seccion-elsa seccion-elsa img-tres texto-tres"
-        "seccion-elsa seccion-elsa img-tres texto-tres"
-        "seccion-elsa seccion-elsa texto-cuatro texto-cuatro"
-        "seccion-elsa seccion-elsa texto-cuatro texto-cuatro"
-        "seccion-luciana seccion-luciana video-elsa video-elsa"
-        "seccion-luciana seccion-luciana video-elsa video-elsa"
-        "seccion-luciana seccion-luciana video-elsa video-elsa"
+        grid-template-areas:
+            "seccion-elsa seccion-elsa img-uno texto-uno"
+            "seccion-elsa seccion-elsa img-uno texto-uno"
+            "seccion-elsa seccion-elsa texto-dos img-dos"
+            "seccion-elsa seccion-elsa texto-dos img-dos"
+            "seccion-elsa seccion-elsa img-tres texto-tres"
+            "seccion-elsa seccion-elsa img-tres texto-tres"
+            "seccion-elsa seccion-elsa texto-cuatro texto-cuatro"
+            "seccion-elsa seccion-elsa texto-cuatro texto-cuatro"
+            "seccion-luciana seccion-luciana video-elsa video-elsa"
+            "seccion-luciana seccion-luciana video-elsa video-elsa"
+            "seccion-luciana seccion-luciana video-elsa video-elsa"
         ;
         gap: 5px;
+    }
+}
+
+.footer-clean {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #4b4c4d;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
     }
 }
