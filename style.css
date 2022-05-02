@@ -122,7 +122,7 @@ h2 {
     max-height: 15%;
     padding: 1px;
     border: 2px double darkmagenta;
-    transition: max-width, max-height, 1.5s;
+    transition: max-width, max-height, 1s;
 }
 
 .novedades-img img:hover {
@@ -147,7 +147,7 @@ h2 {
 .direccion-y-gestion {
     display: grid;
     grid-template-columns: repeat(6, 16.3%);
-    grid-template-rows: repeat(10, 120px);
+    grid-template-rows: repeat(12, 120px);
     grid-template-areas:
         "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
         "seccion-elsa seccion-elsa seccion-elsa img-uno texto-uno img-dos"
@@ -156,6 +156,8 @@ h2 {
         "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
         "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
         "seccion-elsa seccion-elsa seccion-elsa texto-cuatro texto-cuatro texto-cuatro"
+        "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
+        "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
         "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
         "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
         "seccion-luciana seccion-luciana seccion-luciana video-elsa video-elsa video-elsa"
@@ -169,8 +171,8 @@ h2 {
 }
 
 .foto-luciana {
-    max-width: 120%;
-    max-height: 120%;
+    width: 41rem;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -187,6 +189,11 @@ h2 {
     max-height: 100%;
 }
 
+main section article h2{
+    text-align: start;
+    text-decoration: underline;
+}
+
 .titulo-direccion {
     grid-area: titulo-direccion;
 }
@@ -198,6 +205,7 @@ h2 {
 
 .seccion-luciana {
     grid-area: seccion-luciana;
+    margin-top: 20px;
 }
 
 
@@ -293,6 +301,9 @@ h2 {
     justify-content: center;
 }
 
+.reforma-plan{
+    margin-left: 10px;
+}
 
 @media screen and (max-width: 768px) {
     .direccion-y-gestion {
