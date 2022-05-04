@@ -3,6 +3,59 @@
     margin: 0;
 }
 
+.boton-buscar{
+    position: absolute;
+    top: 11%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background: black;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.boton-buscar:hover > input{
+    width: 200px;
+    padding: 0 10px;
+}
+
+.boton-buscar:hover > .icono{
+    background: gray ;
+}
+
+.icono:hover{
+    transform: rotate(360deg) scale(0.8);
+}
+
+input{
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: none;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+    line-height: 40px;
+    color: #fff;
+}
+
+.icono{
+    color: #7d1eb4;
+    float: right;
+    width: 40px;
+    font-size: 1.3rem;
+    height: 40px;
+    border-radius: 50%;
+    background: #2F3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
 .navegacion {
     background-color: darkmagenta;
     width: 100%;
