@@ -163,11 +163,52 @@ h2 {
 }
 
 .novedades-img {
+    position: relative;
     padding-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
+}
+
+.img-aula{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-aula img{
+    z-index: 10;
+}
+
+.img-aula::before{
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 50%;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: rotar 4s linear infinite;
+}
+
+
+.img-aula::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: white;
+}
+
+
+@keyframes rotar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .novedades-img img {
@@ -359,6 +400,27 @@ main section article h2{
 }
 
 @media screen and (max-width: 768px) {
+    .logo-sociales{
+        display: none;
+    }
+    
+    .foto-luciana {
+        width: 20rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .novedades-img {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    
+
     .direccion-y-gestion {
         display: grid;
         grid-template-columns: repeat(4, 25%);
@@ -377,6 +439,14 @@ main section article h2{
             "seccion-luciana seccion-luciana video-elsa video-elsa"
         ;
         gap: 5px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    .direccion-y-gestion{
+        display: grid;
+
     }
 }
 
@@ -456,5 +526,31 @@ main section article h2{
 @media (max-width:767px) {
     .footer-clean .item.social>a {
         margin-top: 10px;
+    }
+}
+
+.container-loading{
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+}
+
+.loading{
+    border: 6px solid #ccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top-color: #7d1eb4;
+    border-left-color: #7d1eb4;
+    animation: girar 1s infinite ease-in-out;
+}
+
+@keyframes girar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
