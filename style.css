@@ -199,6 +199,7 @@ h2 {
     position: absolute;
     inset: 4px;
     background: white;
+    border-radius: 16px;
 }
 
 
