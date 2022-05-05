@@ -97,6 +97,10 @@ input{
     text-decoration: none;
 }
 
+.submenu li a:hover{
+    background-color: darkorchid;
+}
+
 .menu li:hover .submenu {
     display: block;
 }
